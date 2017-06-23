@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Zero Excuse Fitness</string>
+    <string name="address">1515 SnowWhite St, Wonderland, VA 21888</string>
+    <string name="open_from">Open from </string>
+    <string name="schedule"> 6AM to 11PM 7/7 </string>
+    <string name="phone"> 555 444 8888   </string>
+    <string name="website"> zeroxcuse.com </string>
+    <string name="description">
+        Our studio has the best equipments and our professionals will help you design a program just for you.
+        You can transform your body in 6 weeks, Sign up for our weight loss challenge </string>
+
+    <string name="font_family_light">sans-serif-light</string>
+    <string name="font_family_medium">sans-serif-medium</string>
+    <string name="font_family_regular">sans-serif</string>
+    <string name="font_family_condensed">sans-serif-condensed</string>
+    <string name="font_family_black">sans-serif-black</string>
+    <string name="font_family_thin">sans-serif-thin</string>
+</resources>

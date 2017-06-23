@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mkenlo.zeroxcuse.MainActivity">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fitness_cover"
+       />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@string/font_family_medium"
+            android:paddingBottom="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/app_name"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@string/font_family_light"
+            android:paddingBottom="8dp"
+            android:text="@string/address" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/address"
+            android:background="#bdbdbd" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/website"
+            android:layout_alignBottom="@+id/website"
+            android:layout_alignLeft="@+id/address"
+            android:layout_alignStart="@+id/address"
+            android:fontFamily="@string/font_family_light"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/phone" />
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/address"
+            android:layout_alignRight="@+id/address"
+            android:layout_below="@+id/address"
+            android:fontFamily="@string/font_family_medium"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/website"
+            android:textColor="@color/colorAccent" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/phone"
+            android:background="#bdbdbd" />
+
+        <TextView
+            android:id="@+id/open_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/font_family_medium"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/open_from"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:layout_below="@+id/view"
+            android:layout_alignLeft="@+id/phone"
+            android:layout_alignStart="@+id/phone"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp" />
+
+        <TextView
+            android:id="@+id/schedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/font_family_medium"
+            android:padding="8dp"
+            android:text="@string/schedule"
+            android:textSize="16sp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_below="@+id/website"
+            android:layout_toRightOf="@+id/open_from"
+            android:layout_toEndOf="@+id/open_from" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/schedule"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@string/font_family_regular"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/description"
+            android:textAlignment="center" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_below="@id/description"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@string/font_family_medium"
+        android:text="SIGN UP NOW"
+        android:textColor="#FFF"
+        android:textSize="16sp" />
+</LinearLayout>
